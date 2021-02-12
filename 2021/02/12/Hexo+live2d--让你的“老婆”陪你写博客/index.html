@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Core"><title>Hexo+live2d | 让你的“老婆”陪你写博客 · Mr.Woo's Blog</title><meta name="description" content="前言向你的Hexo里放上一只萌萌哒二次元看板娘！
+示例请看右下角的正是我老婆（狗头）
+正文准备1.一个基于Hexo搭建的博客
+2.git基本操作
+安装在hexo的根目录下安装模块：
+1npm install --save hexo-helper-live2d
+
+
+配置向Hexo的 _config.y"><meta name="keywords" content="极限博客,极限Blog,博客,极限"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 5.3.0"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Mr.Woo's Blog</a></h3><div class="description"><p>心之所愿，无事不成。<br> Nothing is impossible to a willing heart.</p></div></div></div><ul class="social-links"><li><a target="_blank" rel="noopener" href="https://github.com/wooyo20"><i class="fa fa-github"></i></a></li><li><a href="mailto:20011109why@gmail.com"><i class="fa fa-envelope"></i></a></li><li><a target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&amp;uin=246803317&amp;site=qq&amp;menu=yes"><i class="fa fa-qq"></i></a></li><li><a target="_blank" rel="noopener" href="https://zhihu.com/people/wu-hao-yu-61"><i class="fa fa-mortar-board"></i></a></li></ul><div class="footer"><div class="p"> <span>©  </span><i class="fa fa-star"></i><span> Core</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/mrcore/hexo-theme-Anatole-Core" target="_blank">Anatole-Core  </a></div><div class="beian"><a href="http://www.beian.miit.gov.cn/" target="_blank"></a><span style="height:10px;margin-left: 10px;">|</span><img src="/images/gongan.png" style="height:10px;margin-left: 10px;position: relative;top: 1px;"><span style="margin-left: 2px;"></span></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/tags">标签</a></li><li><a href="/about">关于</a></li><li><a href="/guestbook">留言</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>Hexo+live2d | 让你的“老婆”陪你写博客</a></h3></div><div class="post-content"><p><img src="https://i.loli.net/2021/02/12/MZxIsuawKQEp6Nh.jpg" alt="v2-904505bcf0c424788f6028b8952aa2e7_1440w.jpg"></p>
+<hr>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>向你的Hexo里放上一只萌萌哒二次元看板娘！</p>
+<p>示例请看右下角的正是我老婆（狗头）</p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>1.一个基于Hexo搭建的博客</p>
+<p>2.git基本操作</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>在hexo的根目录下安装模块：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>向Hexo的 <code>_config.yml</code> 文件或主题的 <code>_config.yml</code> 文件中添加配置</p>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">  enable: true #是否启用</span><br><span class="line">  scriptFrom: local</span><br><span class="line">  pluginRootPath: live2dw&#x2F;</span><br><span class="line">  pluginJsPath: lib&#x2F;</span><br><span class="line">  pluginModelPath: assets&#x2F;</span><br><span class="line">  tagMode: false</span><br><span class="line">  debug: false</span><br><span class="line">  model:</span><br><span class="line">    use: live2d-widget-model-wanko # 使用模型的包名</span><br><span class="line">  display: # 设置显示位置和大小</span><br><span class="line">    position: right</span><br><span class="line">    width: 150</span><br><span class="line">    height: 300</span><br><span class="line">  mobile: # 在手机端显示</span><br><span class="line">    show: true</span><br><span class="line">  react:</span><br><span class="line">    opacity: 0.7 # 透明度，当然也可以单独设置鼠标覆盖时的透明度</span><br><span class="line">    # opacityDefault: 0.7</span><br><span class="line">    # opacityOnHover: 0.2</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h2><h3 id="使用现成模型"><a href="#使用现成模型" class="headerlink" title="使用现成模型"></a>使用现成模型</h3><p>比如最常用的<a target="_blank" rel="noopener" href="https://github.com/xiazeyu/live2d-widget-models">live2d-widget-models</a></p>
+<p>可以选择一个你喜欢的模型，然后利用 <code>npm install 模型的包名</code> 来安装，然后将包名输入位于 <code>_config.yml</code> 的 <code>model.use</code> 中。</p>
+<p>例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install live2d-widget-model-shizuku</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="本地的模型"><a href="#本地的模型" class="headerlink" title="本地的模型"></a>本地的模型</h3><p>网上查了很多教程，很多都是直接使用现成的模型。但是相对模型数量不是很多，反复那几个。又或者觉得不喜欢那几个模型，就可以考虑在网上自己搜集好看的模型。</p>
+<p>先说说怎么使用吧。</p>
+<p>一、live2d_models子目录名称</p>
+<ol>
+<li>在您博客根目录下创建一个 <code>live2d_models</code> 文件夹。</li>
+<li>在此文件夹内新建一个子文件夹。</li>
+<li>将你的 Live2D 模型复制到这个子文件夹中。</li>
+<li>将子文件夹的名称输入 <code>_config.yml</code> 的 <code>model.use</code> 中。</li>
+</ol>
+<p>二、相对于博客根目录的自定义路径</p>
+<p>当然您也可直接输入相对于博客根目录的自定义路径到 <code>model.use</code> 中.</p>
+<h3 id="模型获取"><a href="#模型获取" class="headerlink" title="模型获取"></a>模型获取</h3><p>在这里分享几个我找到的模型资源网站吧：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://mx.paul.ren/">梦象</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/summerscar/live2dDemo">live2dDemo</a>（GitHub仓库）<a target="_blank" rel="noopener" href="https://imuncle.github.io/live2d/">预览地址</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/imuncle/live2d">live2d</a>（GitHub仓库）<a target="_blank" rel="noopener" href="https://summerscar.me/live2dDemo/">预览地址</a></li>
+</ul>
+<p>当然在网络上还有很多资源可以自己去寻找，但是请一定要注意<strong>版权问题</strong>哦。</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>关于Hexo+live2d的内容到此结束。</p>
+<p>今天是春节，虽然也没人看，但还是在这里祝福一下所有人新年快乐。</p>
+<p>新的一年，送给自己一句话：不走心的努力都是在敷衍自己。</p>
+<p>加油吧，不再颓废。保持热爱，奔赴山海。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2021-02-12</span><i class="fa fa-tag"></i><a class="tag" href="/tags/博客美化/" title="博客美化">博客美化 </a><span class="leancloud_visitors"></span></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="" onclick="javascript:join_favorite()" ref="sidebar"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,https://wooyo20.github.io/2021/02/12/Hexo+live2d--让你的“老婆”陪你写博客/,Mr.Woo's Blog,Hexo+live2d | 让你的“老婆”陪你写博客,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="next pagbuttons"><a class="btn" role="navigation" href="/2020/12/27/%E4%B8%AD%E5%9B%BD%E6%96%87%E5%8C%96%E8%A6%81%E7%95%A5%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="中国文化要略复习笔记">下一篇</a></li></ul></div><script src="/js/visitors.js"></script><a id="comments"></a><div id="vcomments" style="margin:0 30px;"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//cdn.jsdelivr.net/gh/xcss/valine@latest/dist/Valine.min.js"></script><script>var valine = new Valine({
+  el:'#vcomments',
+  notify:false || false, 
+  verify:false|| false, 
+  app_id:'dwrTrp1M5ntbbC1Pv2yGN9Gt-9Nh9j0Va',
+  app_key:'OgkNg64TYEonEfRPSSXFI0jO',
+  placeholder:'念念不忘，必有回响...',
+  path: window.location.pathname,
+  serverURLs: '',
+  visitor:true,
+  recordIP:true,
+  avatar:'mp'
+})</script></div></div></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script><script src="/js/baidu-tongji.js"></script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/katou_01.model.json"},"display":{"position":"right","width":300,"height":400},"mobile":{"show":false},"react":{"opacity":0.8},"log":false});</script></body></html>
